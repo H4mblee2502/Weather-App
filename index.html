@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css.css">
+    
+    <!-- Google ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="main-containter">
+
+        <!-- Input Header -->
+        <div class ="input-container">
+            <input type="text" class="input-city" placeholder="Search a city...">
+            <button class="searchBtn">
+                <span class="material-symbols-outlined">
+                search
+                </span>
+            </button>
+        </div>
+
+        <!-- Weather City -->
+        <div class="weather-city" style="display: none;">
+
+            <div class="location-date">
+
+                <div class="location"> 
+                    <span class="material-symbols-outlined">
+                    location_on
+                    </span>
+                    <h4 class="city-text">Tokyo</h4>
+                </div>
+                <h5 class="current-date-text sub-text">Mon, 01 Jun</h5>
+            </div>
+
+            <!-- Weather summary content goes here -->
+            <div class="weather-summary-container">
+                <img  class="weather-icon" src = "weather/cloudy.png" width="140px" height="140px" alt="weather icon">
+
+                <div class="weather-description">
+                    <h3 class="temperature">22 °C</h3>
+                    <p class="description sub-text">Cloudy</p>
+                </div>
+
+            </div>
+            <!-- Weather Status -->
+            <div class="weather-status-container">
+
+                <div class="condition-items">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="conditon-info">
+                        <h5 class="condition"> Wind Speed</h5>
+                        <h5 class="wind-value-text">150KPH</h4>
+                    </div>
+
+                </div>
+                 <div class="condition-items">
+                    <span class="material-symbols-outlined">
+                    water_drop
+                    </span>
+                    <div class="conditon-info">
+                        <h5 class="condition">Humidity</h5>
+                        <h5 class="humidity-value-text">58%</h5>
+                    </div>
+                </div>
+
+                 <div class="condition-items">
+                    <span class="material-symbols-outlined">
+                    umbrella
+                    </span>
+                    <div class="conditon-info">
+                        <h5 class="condition"> Chance</h5>
+                        <h5 class="chance-value-text">15%</h5>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Forecast -->
+<div class="forecast-container">
+                <div class="forecast-items">
+                    <h5 class="forecast-item-date sub-text"> 02 Jun</h5>
+                    <img src="weather/snowy.png" class="forecast-item-icon" width="110px" height="110px" alt="forecast icon">
+                    <h5 class="forecast-item-temperature">18 °C</h5>
+                </div>
+                <div class="forecast-items">
+                    <h5 class="forecast-item-date sub-text"> 03 Jun</h5>
+                    <img src="weather/sunny.png" class="forecast-item-icon" width="110px" height="110px" alt="forecast icon">
+                    <h5 class="forecast-item-temperature">31 °C</h5>
+                </div>
+                <div class="forecast-items">
+                    <h5 class="forecast-item-date sub-text"> 04 Jun</h5>
+                    <img src="weather/stormy.png" class="forecast-item-icon" width="110px" height="110px" alt="forecast icon">
+                    <h5 class="forecast-item-temperature">28 °C</h5>
+                </div>
+                <div class="forecast-items">
+                    <h5 class="forecast-item-date sub-text"> 05 Jun</h5>
+                    <img src="weather/rainy.png" class="forecast-item-icon" width="110px" height="110px" alt="forecast icon">
+                    <h5 class="forecast-item-temperature">26 °C</h5>
+                </div>
+            </div> </div> <div class="search-city section-blank">
+            <img src="img/search-city.png" width="fit-content" height="180px" alt="search city image">
+            <div>
+                <h1>Search for a City</h1>
+                <h4 class="sub-text">
+                    Find out the weather conditions of your city and plan your day accordingly.
+                </h4>
+            </div>
+        </div>
+
+        <div class="not-found section-blank" style="display: none;">
+            <img src="img/not-found.png" width="fit-content" height="180px" alt="not found image">
+            <div>
+                <h1>City Not Found</h1>
+                <h4 class="sub-text">
+                    We couldn't find that location. Please check your spelling and try again.
+                </h4>
+            </div>
+        </div>
+    </div> 
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
